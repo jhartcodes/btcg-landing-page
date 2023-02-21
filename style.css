@@ -291,11 +291,9 @@ h1 {
 .participants {
   padding: 50px;
   background-color: #0d8360;
-  border: solid red;
 }
 
 .participants-table {
-  border: solid black;
   border-collapse: collapse;
   margin-top: 64px;
   width: 100%;
@@ -353,12 +351,16 @@ h1 {
 .sponsors-header {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+.sponsors-header h2 {
+  margin-bottom: 60px;
 }
 
 .sponsors-header img {
   display: block;
-  margin: 0 auto;
+  margin: 2px;
 }
 
 .donations-header {
@@ -381,9 +383,12 @@ h1 {
 .sponsors-row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   margin-bottom: 100px;
+}
+
+h4 {
+  white-space: nowrap;
 }
 
 .sponsors-column {
@@ -398,6 +403,30 @@ h1 {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+/* Set width of first row */
+.sponsors-row:first-child {
+  width: 80%;
+}
+
+/* Set width of second row */
+.sponsors-row:not(:first-child) {
+  width: 70%;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .sponsors-row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .sponsors-column {
+    margin: 20px 0;
+    flex-basis: 50%;
+  }
 }
 
 /* Footer section styles */
@@ -429,7 +458,6 @@ h1 {
   width: 118px;
   height: 90px;
   opacity: 0.7;
-  border: solid red;
 }
 
 .footer-line {
@@ -451,7 +479,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border: solid red;
 }
 
 .long-arrow {
