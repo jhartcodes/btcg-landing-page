@@ -8,6 +8,21 @@
   /* ff-primary: HarmoniaSansW01-Regular; */
 }
 
+/* Font Import */
+
+@font-face {
+  font-family: "Harmonia Sans Bold ";
+  src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.otf")
+    format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Harmonia Sans Regular";
+  src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.otf")
+    format("opentype");
+  font-weight: normal;
+}
 /*  https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
@@ -40,6 +55,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  background-color: #0d8360;
 }
 
 /* Set core body defaults */
@@ -78,6 +94,7 @@ svg {
   }
 }
 
+/*  */
 /* Header styles */
 
 .header-summary {
@@ -90,16 +107,28 @@ svg {
   line-height: 24px;
 }
 
-/* links */
+/* Font Styles */
 .stories-link {
+  font-family: "Harmonia Sans Mono Regular", sans-serif;
   text-decoration: underline;
 }
 
 .acknowledgements-link {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Harmonia Sans Mono Bold", sans-serif;
   text-decoration: underline;
 }
 
+/* font sizes */
+body {
+  font-family: "Harmonia Sans Mono Regular", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Harmonia Sans Mono Bold", sans-serif;
+  font-weight: bold;
+}
+/* Gradient Background Color for Header */
 .split-background {
   display: flex;
   flex-direction: column;
@@ -130,9 +159,8 @@ svg {
 .split-header-right a {
   margin-left: 30px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Bold;
+
   font-size: 20px;
-  text-decoration: none;
 }
 
 .split-content {
@@ -172,6 +200,53 @@ svg {
   left: 20px;
 }
 
+/* Gay and Lesbian Content Section */
+
+.gay-lesbian-container {
+  background-color: #0d8360;
+}
+
+.gl-content-wrapper {
+  background-color: #0d8360;
+  margin: 60px 150px 100px;
+  display: flex;
+}
+
+.left-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-column img {
+  width: 50%;
+  opacity: 0.2; /* Sets the transparency to 70% */
+  color: #0d8360;
+}
+
+.right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.right-header {
+  font-size: 64px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-family: ;
+  font-size: 20px;
+  color: #fff;
+  font-family: HarmoniaSansW01-Bold;
+  line-height: 1.5;
+}
+
 /* Content section styles */
 .content {
   display: flex;
@@ -204,17 +279,25 @@ svg {
 
 /* Participants section styles */
 .participants h2 {
-  font-size: 24px;
-  color: white;
-  padding: 8px;
+  height: 68px;
+  width: 505px;
+  color: #ffffff;
+  font-family: HarmoniaSansW01-Bold;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 68px;
+  padding-bottom: 64px;
 }
 .participants {
   padding: 50px;
   background-color: #0d8360;
+  border: solid red;
 }
 
 .participants-table {
+  border: solid black;
   border-collapse: collapse;
+  margin-top: 64px;
   width: 100%;
   color: white;
 }
@@ -320,6 +403,7 @@ svg {
 /* Footer section styles */
 .footer {
   background-color: #0d8360;
+  display: flex;
   height: 300px;
   position: relative;
   color: #fff;
@@ -340,12 +424,12 @@ svg {
 }
 
 .footer-image {
-  position: absolute;
   left: 0px;
   margin: 0 auto;
   width: 118px;
   height: 90px;
   opacity: 0.7;
+  border: solid red;
 }
 
 .footer-line {
@@ -360,12 +444,14 @@ svg {
 .back-to-top {
   position: absolute;
   bottom: 120px;
+  margin-bottom: 24px;
   right: 16px;
   font-size: 24px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border: solid red;
 }
 
 .long-arrow {
