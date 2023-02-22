@@ -1,13 +1,3 @@
-:root {
-  --secondary-green: #0a664b;
-  --primary-green: #0d8360;
-  --text-primary-color: #ffffff;
-  --text-sponsor-header-color: #656565;
-
-  /* ff-primary-bold: font-family: HarmoniaSansW01-Bold; */
-  /* ff-primary: HarmoniaSansW01-Regular; */
-}
-
 /* Font Import */
 
 @font-face {
@@ -35,6 +25,8 @@
 }
 
 /*  https://piccalil.li/blog/a-modern-css-reset */
+
+/* Standard set up for some accessibility and sizing */
 
 /* Box sizing rules */
 *,
