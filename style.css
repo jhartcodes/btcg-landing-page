@@ -11,18 +11,29 @@
 /* Font Import */
 
 @font-face {
-  font-family: "Harmonia Sans Bold ";
-  src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.otf")
-    format("opentype");
-  font-weight: normal;
+  font-family: "Harmonia Sans Mono Bold";
+  src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans Mono W01 Bold.otf")
+      format("opentype"),
+    url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans Mono W01 Bold.ttf")
+      format("truetype");
 }
 
 @font-face {
   font-family: "Harmonia Sans Regular";
   src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.otf")
-    format("opentype");
-  font-weight: normal;
+      format("opentype"),
+    url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Regular.ttf")
+      format("truetype");
 }
+
+@font-face {
+  font-family: "Harmonia Sans Bold";
+  src: url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Bold.otf")
+      format("opentype"),
+    url("public/Fonts/Harmonia-Sans-Font/Harmonia Sans W01 Bold.ttf")
+      format("truetype");
+}
+
 /*  https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
@@ -101,7 +112,7 @@ svg {
   top: 565px;
   width: 518px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Regular;
+  font-family: "Harmonia Sans Regular";
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -109,18 +120,18 @@ svg {
 
 /* Font Styles */
 .stories-link {
-  font-family: "Harmonia Sans Mono Regular", sans-serif;
+  font-family: "Harmonia Sans Mono ", sans-serif;
   text-decoration: underline;
 }
 
 .acknowledgements-link {
-  font-family: "Harmonia Sans Mono Bold", sans-serif;
+  font-family: "Harmonia Sans Bold", sans-serif;
   text-decoration: underline;
 }
 
 /* font sizes */
 body {
-  font-family: "Harmonia Sans Mono Regular", sans-serif;
+  font-family: "Harmonia Sans Bold ", sans-serif;
   font-weight: normal;
 }
 
@@ -141,6 +152,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 25px 25px 0;
+  margin-bottom: 60px;
 }
 
 .split-header-left {
@@ -151,7 +163,6 @@ h1 {
 .split-header-left a {
   margin-right: 30px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Bold;
   font-size: 20px;
   text-decoration: none;
 }
@@ -159,7 +170,6 @@ h1 {
 .split-header-right a {
   margin-left: 30px;
   color: #ffffff;
-
   font-size: 20px;
 }
 
@@ -169,38 +179,52 @@ h1 {
   align-items: left;
   justify-content: center;
   height: calc(100% - 190px - 320px - 42px - 40px);
-  margin: 42px 0 40px 20px;
+  margin: 0 0 60px 20px;
 }
 
-.the-following-indivi {
+.content-left-header-1 {
+  margin-top: 60px;
   height: 320px;
   width: 707px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Bold;
+  font-family: "Harmonia Sans Bold", sans-serif;
   font-size: 60px;
   letter-spacing: 0;
   line-height: 64px;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 60px;
 }
 
-.we-acknowledge-that {
+.content-left-header-1 p {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.content-left-header-2 {
+  margin-bottom: 50px;
   height: 190px;
   width: 676px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Bold;
+  font-family: "Harmonia Sans Bold", sans-serif;
   font-size: 34px;
   letter-spacing: 0;
   line-height: 38px;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 60px;
 }
 
-.bottom-left-image {
+.content-left-header-2 p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.arrow-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   left: 20px;
 }
 
-/* Gay and Lesbian Content Section */
+/* Archives Content Section */
 
 .gay-lesbian-container {
   background-color: #0d8360;
@@ -220,7 +244,6 @@ h1 {
 
 .left-column img {
   width: 50%;
-  opacity: 0.2; /* Sets the transparency to 70% */
   color: #0d8360;
 }
 
@@ -240,57 +263,32 @@ h1 {
 }
 
 .description {
-  font-family: ;
-  font-size: 20px;
+  height: 612px;
+  font-weight: 100;
+  width: 642px;
+  font-family: "Harmonia Sans Regular";
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0;
   color: #fff;
-  font-family: HarmoniaSansW01-Bold;
   line-height: 1.5;
 }
 
 /* Content section styles */
-.content {
-  display: flex;
-  padding: 50px;
-  background-color: #c5e6a5;
-}
-
-.content .left {
-  width: 50%;
-}
-
-.content .right {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.content h2 {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 26px;
-  line-height: 1.5;
-  height: 612px;
-}
-
 /* Participants section styles */
+.participants {
+  padding: 50px;
+  background-color: #0d8360;
+}
+
 .participants h2 {
-  height: 68px;
-  width: 505px;
   color: #ffffff;
-  font-family: HarmoniaSansW01-Bold;
+  font-family: "Harmonia Sans Bold";
   font-size: 64px;
   letter-spacing: 0;
   line-height: 68px;
   padding-bottom: 64px;
-}
-.participants {
-  padding: 50px;
-  background-color: #0d8360;
+  margin: 0;
 }
 
 .participants-table {
@@ -304,11 +302,12 @@ h1 {
 .participants-table th {
   text-align: left;
   padding: 8px;
+  font-family: "Harmonia Sans Regular";
+  color: #fff;
 }
 
 .participants-table th {
   background-color: #222;
-  color: white;
   font-weight: bold;
   text-align: center;
 }
@@ -317,16 +316,22 @@ h1 {
   border: none;
 }
 
-/*Arrow  */
+@media screen and (max-width: 768px) {
+  /* Adjust table layout for smaller screens */
+  .participants-table td,
+  .participants-table th {
+    font-size: 14px;
+    padding: 4px;
+  }
 
-.arrow {
-  height: 22px;
-  width: 85.65px;
-  transform: rotate(270deg);
-  background-color: #ffffff;
+  .participants h2 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 32px;
+  }
 }
 
-/* Sponsor Section  */
+/* Sponsor Section */
 
 .sponsors-section {
   margin-top: 90px;
@@ -343,16 +348,19 @@ h1 {
 .sponsors-header,
 .donations-header,
 .sponsors-row {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 }
 
 .sponsors-header {
   font-size: 40px;
-  font-weight: bold;
+  font-family: "Harmonia Sans Bold";
   margin-bottom: 60px;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sponsors-header h2 {
   margin-bottom: 60px;
@@ -376,6 +384,13 @@ h1 {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .donations-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .donations-images img {
   margin-right: 30px;
 }
@@ -388,6 +403,7 @@ h1 {
 }
 
 h4 {
+  font-family: "Harmonia Sans Regular";
   white-space: nowrap;
 }
 
@@ -407,7 +423,7 @@ h4 {
 
 /* Set width of first row */
 .sponsors-row:first-child {
-  width: 80%;
+  width: 85%;
 }
 
 /* Set width of second row */
@@ -489,22 +505,118 @@ h4 {
   background-color: #555;
 }
 
-/* .long-arrow::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -9px;
-  border-top: 15px solid transparent;
-  border-right: 15px solid black;
-  border-bottom: 15px solid transparent;
-} */
+/* Media Queries  */
+/* Header Section */
 
-.long-arrow::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: -1.5px;
-  width: 3px;
-  height: 60px;
-  background-color: #ffffff;
+@media only screen and (max-width: 767px) {
+  .split-background {
+    height: auto;
+  }
+
+  .split-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .split-header-left {
+    margin-bottom: 20px;
+  }
+
+  .split-header-left a {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .split-header-right {
+    margin-top: 20px;
+  }
+
+  .split-content {
+    height: auto;
+    margin: 20px;
+  }
+
+  .the-following-indivi {
+    height: auto;
+    width: 100%;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .we-acknowledge-that {
+    height: auto;
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .bottom-left-image {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .split-header-left a {
+    font-size: 18px;
+  }
+
+  .the-following-indivi {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .we-acknowledge-that {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .split-background {
+    height: 1130px;
+  }
+
+  .split-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px 0;
+  }
+
+  .split-header-left a {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  .split-header-right {
+    margin-top: 0;
+  }
+
+  .split-content {
+    height: calc(100% - 190px - 320px - 42px - 40px);
+    margin: 42px 0 40px 20px;
+  }
+
+  .the-following-indivi {
+    height: 320px;
+    width: 707px;
+    font-size: 60px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .we-acknowledge-that {
+    height: 190px;
+    width: 676px;
+    font-size: 34px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .bottom-left-image {
+    margin-top: 0;
+  }
 }
